@@ -1,2 +1,2 @@
-# CH53Colaborartivo
-Proyecto para colaborar en la CH53
+# Mi banda favorita
+Te presento a mi artista musical favorito y por qué.

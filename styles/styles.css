@@ -1,0 +1,76 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box; /* Hack para el Box Model */
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('./font/MagallanesRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    background-image: url("../assets/background-transparent.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    font-family: 'MiFuente', sans-serif;
+}
+
+body {
+    text-align: justify;
+    max-width: 50%;
+}
+
+#gorillaz-group {
+    max-width: 100%;
+}
+
+.navegacion {
+    text-decoration: none;
+    background-color: #B1CFCD;
+    color: #1E4B80;
+    padding: 10px;
+    border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.navegacion:hover {
+    text-decoration: none;
+    background-color: #FF9E58;
+    color: #183D5A;
+    padding: 10px;
+    border-radius: 0px;
+	
+}
+
+.tarjetas {
+    margin-top: 30px;
+    background-color: #B1CFCD;
+    padding: 1px 15px;
+    max-width: 300px;
+}
+
+form {
+    /* margin-top: 30px; */
+}
+
+.campos {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.campos input{
+    width: 50%;
+}
+
+.campos #mensaje {
+    height: 200px;
+    width: 100%;
+}
