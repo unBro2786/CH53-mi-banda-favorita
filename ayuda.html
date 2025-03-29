@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Discografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Shadows+Into+Light&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-	<div class="navegacion">
-	    <a href="./index.html">Volver al inicio</a>
-	</div>
+<body id="ayuda">
+	<div class="nav-contenedor">
+        <a class="navegacion" href="./index.html">← Volver al inicio</a>
+        <a class="navegacion" href="./discografia.html">Ver discografía</a>
+        <a class="navegacion" href="https://open.spotify.com/intl-es/artist/3AA28KZvwAUcZuOKwyblJQ" target="_blank">Escucha al artista</a>
+    </div>
 
     <form action="">
         <div class="campos">
@@ -30,8 +37,8 @@
             <label for="etiquetas" style="display: block;">Tu mensaje:</label>
             <textarea name="mensaje" id="mensaje"></textarea>
         </div>
-        <div class="campos">
-            <input type="submit" value="Enviar">
+        <div class="campos boton-enviar">
+            <input type="submit" value="Enviar" id="boton-enviar">
         </div>
     </form>
 

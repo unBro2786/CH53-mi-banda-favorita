@@ -1,4 +1,10 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+:root {
+    --bg-color: #E8F5E9;
+    --highlight-color: #FF9E58;
+    --contrast-color: #B1CFCD;
+    --hover-event-color: #183D5A;
+}
+
 html {
     box-sizing: border-box; /* Hack para el Box Model */
     scroll-snap-type: y mandatory;
@@ -7,35 +13,45 @@ html {
     box-sizing: inherit;
 }
 
-@font-face {
-    font-family: 'MiFuente';
-    src: url('./font/MagallanesRegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 html {
+    background-color: var(--bg-color);
+
     background-image: url("../assets/background-transparent.png");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;
-    font-family: 'MiFuente', sans-serif;
+    background-attachment: fixed;
+    background-size: 40%;
+
+    font-family: "Fira Sans Condensed";
+    
 }
 
-body {
+@font-face {
+    font-family: 'Gorilaz-font';
+    src: url('./fonts/gorillaz_1.ttf') format('truetype');
+}
+
+body#index {
     text-align: justify;
     max-width: 50%;
+}
+
+.centrar-texto {
+    text-align: center;
 }
 
 #gorillaz-group {
     max-width: 100%;
 }
 
+.nav-contenedor {
+    margin: 20px;
+}
+
 .navegacion {
     text-decoration: none;
-    background-color: #B1CFCD;
-    color: #1E4B80;
+    background-color: var(--contrast-color);
+    color: var(--hover-event-color);
     padding: 10px;
     border-radius: 4px;
 	margin-bottom: 10px;
@@ -43,34 +59,71 @@ body {
 
 .navegacion:hover {
     text-decoration: none;
-    background-color: #FF9E58;
-    color: #183D5A;
+    background-color: var(--highlight-color);
+    color: var(--hover-event-color);
     padding: 10px;
     border-radius: 0px;
 	
 }
 
+.fuente-gorillaz {
+    font-family: 'Gorilaz-font';
+    font-size: 100px;
+}
+
+/* ==== discografia.html ==== */
+
+div.contenedor {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media (max-width: 470px) {
+    div.contenedor {
+        display: inline;
+    }
+}
+
 .tarjetas {
     margin-top: 30px;
-    background-color: #B1CFCD;
+    background-color: var(--contrast-color);
     padding: 1px 15px;
     max-width: 300px;
 }
 
-form {
-    /* margin-top: 30px; */
+.caratula {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
 }
 
-.campos {
+/* ==== ayuda.html ==== */
+form {
+    max-width: 600px;
+    margin: 40px 70px;
+    padding: 10px;
+    background-color: var(--contrast-color);
+}
+div.campos {
     text-align: left;
     margin-bottom: 10px;
 }
 
-.campos input{
-    width: 50%;
+div.campos input{
+    width: 100%;
 }
 
-.campos #mensaje {
+div.campos textarea#mensaje {
     height: 200px;
     width: 100%;
+}
+
+div.boton-enviar {
+    text-align: right;
+}
+input#boton-enviar {
+    width: 100px;
 }

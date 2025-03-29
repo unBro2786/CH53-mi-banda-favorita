@@ -6,62 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Discografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Shadows+Into+Light&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <a class="navegacion" href="./index.html">Volver al inicio</a>
+<body id="discografia">
+    <div class="nav-contenedor">
+        <a class="navegacion" href="./index.html">← Volver al inicio</a>
+        <a class="navegacion" href="./ayuda.html">Quejas y sugerencias</a>
+        <a class="navegacion" href="https://open.spotify.com/intl-es/artist/3AA28KZvwAUcZuOKwyblJQ" target="_blank">Escucha al artista</a>
+    </div>
 
-    <!-- Crear 3-5 tarjetas con tus albumes favoritos -->
+    <h1 class="centrar-texto">Discografía</h1>
 
-    <div class="tarjetas">
-        <h5>Clint Eastwood</h5>
-        <img src="./assets/Clint-Eastwood-album.jpg" alt="Clint Eastwood album" style="width: 300px;">
-        <h6>11 de mayo de 2005</h6>
-        <p>Descripción</p>
-        <ol>
-            <li>Clint Eastwood</li>
-            <li>Rock de House</li>
-            <li>19-2000</li>
-            <li>Tomorrow comes today</li>
-        </ol>
-    </div>
-    <div class="tarjetas">
-        <h5>Demon Days</h5>
-        <img src="./assets/Demon-days-album.jpg" alt="Demon Days album" style="width: 300px;">
-        <h6>11 de mayo de 2005</h6>
-        <p>Demon Days es el segundo álbum de Gorillaz, una obra conceptual con un sonido oscuro y cinematográfico que
-            mezcla hip-hop, rock alternativo, electrónica y trip-hop. Producido por Danger Mouse y Damon Albarn, el
-            disco aborda temas como la guerra, el cambio climático, la soledad y la decadencia social.</p>
-        <ol>
-            <li>Feel Good Inc.</li>
-            <li>Dare</li>
-            <li>Dirty Harry</li>
-            <li>El mañana</li>
-        </ol>
-    </div>
-    <div class="tarjetas">
-        <h5>Plastic beach</h5>
-        <img src="./assets/Plastic-beach-album.jpg" alt="Plastic beach album" style="width: 300px;" style="width: 300px;">
-        <h6>11 de mayo de 2005</h6>
-        <p>Descripción</p>
-        <ol>
-            <li>Rhinestone eyes</li>
-            <li>Stylo</li>
-            <li>Plastic beach</li>
-            <li>On a melancoly hill</li>
-        </ol>
-    </div>
-    <div class="tarjetas">
-        <h5>Humanz</h5>
-        <img src="./assets/Humanz-album.jpg" alt="Humanz album" style="width: 300px;">
-        <h6>11 de mayo de 2005</h6>
-        <p>Descripción</p>
-        <ol>
-            <li>Saturnz Barz</li>
-            <li>We Got the Power</li>
-            <li>Ascension</li>
-            <li>Andromeda</li>
-        </ol>
+    <div class="contenedor">
+        <div class="tarjetas">
+            <h2 class="centrar-texto">Clint Eastwood</h2>
+            <img class="caratula" src="./assets/Clint-Eastwood-album.jpg" alt="Clint Eastwood album">
+            <h3>11 de mayo de 2005</h3>
+            <h3>Descripción</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, minima.</p>
+            <h3>Canciones que mas me gustan</h3>
+            <ol>
+                <li>Clint Eastwood</li>
+                <li>Rock de House</li>
+                <li>19-2000</li>
+                <li>Tomorrow comes today</li>
+            </ol>
+        </div>
+        <div class="tarjetas">
+            <h2 class="centrar-texto">Demon Days</h2>
+            <img class="caratula" src="./assets/Demon-days-album.jpg" alt="Demon Days album">
+            <h3>11 de mayo de 2005</h3>
+            <p>Demon Days es el segundo álbum de Gorillaz, una obra conceptual con un sonido oscuro y cinematográfico que
+                mezcla hip-hop, rock alternativo, electrónica y trip-hop. Producido por Danger Mouse y Damon Albarn, el
+                disco aborda temas como la guerra, el cambio climático, la soledad y la decadencia social.</p>
+            <ol>
+                <li>Feel Good Inc.</li>
+                <li>Dare</li>
+                <li>Dirty Harry</li>
+                <li>El mañana</li>
+            </ol>
+        </div>
+        <div class="tarjetas">
+            <h2 class="centrar-texto">Plastic beach</h2>
+            <img class="caratula" src="./assets/Plastic-beach-album.jpg" alt="Plastic beach album">
+            <h3>11 de mayo de 2005</h3>
+            <h3>Descripción</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, minima.</p>
+            <h3>Canciones que mas me gustan</h3>
+            <ol>
+                <li>Rhinestone eyes</li>
+                <li>Stylo</li>
+                <li>Plastic beach</li>
+                <li>On a melancoly hill</li>
+            </ol>
+        </div>
+        <div class="tarjetas">
+            <h2 class="centrar-texto">Humanz</h2>
+            <img class="caratula" src="./assets/Humanz-album.jpg" alt="Humanz album">
+            <h3>11 de mayo de 2005</h3>
+            <h3>Descripción</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, minima.</p>
+            <h3>Canciones que mas me gustan</h3>
+            <ol>
+                <li>Saturnz Barz</li>
+                <li>We Got the Power</li>
+                <li>Ascension</li>
+                <li>Andromeda</li>
+            </ol>
+        </div>
     </div>
 
 
